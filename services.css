@@ -1,0 +1,568 @@
+/* ===== Base ===== */
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;color:#0f1f3d;background:#fff;line-height:1.6}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+
+/* ===== Buttons ===== */
+.btn-primary{display:inline-block;background:#1e63ff;color:#fff;padding:12px 22px;border-radius:8px;font-weight:600;font-size:14px;transition:.3s}
+.btn-primary:hover{background:#1750d6;transform:translateY(-2px);box-shadow:0 8px 20px rgba(30,99,255,.3)}
+.btn-primary.small{padding:8px 18px}
+.btn-light{display:inline-block;background:#fff;color:#1e63ff;padding:12px 22px;border-radius:8px;font-weight:600;font-size:14px;transition:.3s}
+.btn-light:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.15)}
+.btn-outline-light{display:inline-block;background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.6);padding:11px 22px;border-radius:8px;font-weight:600;font-size:14px;transition:.3s}
+.btn-outline-light:hover{background:rgba(255,255,255,.1);border-color:#fff}
+
+/* ===== Navbar ===== */
+
+.nav-wrap{position:sticky;top:0;background:#fff;z-index:100;border-bottom:1px solid #eef0f5}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;gap:20px}
+.brand{font-weight:700;color:#1e63ff;font-size:20px}
+.nav-links{display:flex;gap:26px}
+.nav-links a{font-size:14px;font-weight:500;color:#384259;position:relative;padding:6px 0;transition:.2s}
+.nav-links a:hover{color:#1e63ff}
+.nav-links a.active{color:#1e63ff;font-weight:600}
+.nav-links a.active::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:#1e63ff;border-radius:2px}
+.nav-right{display:flex;align-items:center;gap:12px}
+.icon-btn{background:none;border:none;cursor:pointer;font-size:16px}
+.hamburger{display:none;flex-direction:column;gap:4px;background:none;border:none;cursor:pointer;padding:6px}
+.hamburger span{display:block;width:22px;height:2px;background:#0f1f3d;border-radius:2px}
+
+/* ===== Hero ===== */
+.hero {
+  position: relative;
+  min-height: 480px;
+  background: url(https://dev-external.greencrm24.com/ravi/CozyVision/image/servicehero.png) center/cover no-repeat;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Ensure content starts from the left */
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(8,18,40,.85), rgba(8,18,40,.55));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 80px 20px;
+  max-width: 780px;
+  text-align: left; /* Forces text alignment */
+  margin-left: 0;   /* Keeps container on the left */
+  margin-right: auto;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(30,99,255,.25);
+  border: 1px solid rgba(255,255,255,.2);
+  color: #cfe0ff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.15;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.hero .accent {
+  color: #5b9bff;
+}
+
+.hero p {
+  font-size: 15px;
+  opacity: .85;
+  margin-bottom: 28px;
+  max-width: 560px;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Keeps buttons on the left */
+}
+/* .hero{position:relative;min-height:480px;background:url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1600&q=80') center/cover no-repeat;color:#fff;display:flex;align-items:center}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(8,18,40,.85),rgba(8,18,40,.55))}
+.hero-content{position:relative;z-index:2;padding:80px 20px;max-width:780px}
+.badge{display:inline-block;background:rgba(30,99,255,.25);border:1px solid rgba(255,255,255,.2);color:#cfe0ff;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:.5px;margin-bottom:20px}
+.hero h1{font-size:48px;line-height:1.15;font-weight:700;margin-bottom:18px}
+.hero .accent{color:#5b9bff}
+.hero p{font-size:15px;opacity:.85;margin-bottom:28px;max-width:560px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap} */
+
+/* ===== Section Head ===== */
+.section{padding:80px 0}
+.section-head.center{text-align:center;max-width:680px;margin:0 auto 50px}
+.section-head h2{font-size:28px;letter-spacing:2px;margin-bottom:14px;color:#0f1f3d;font-weight:700}
+
+
+.section-head p{color:#5b6b85;font-size:15px}
+
+/* ===== Services ===== */
+./* ---- SERVICES SECTION & CONTAINER ---- */
+.services {
+  background: #f5f7fb;
+  padding: 60px 0; /* Section ko upar-niche se thoda space dene ke liye */
+}
+
+/* ---- NEW DIVIDER DESIGN (Section Head) ---- */
+.section-head.center {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-head h2 {
+  font-size: 32px;
+  color: #0f1f3d;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 25px; /* Divider ke liye space */
+  margin-bottom: 15px;
+}
+
+/* 1. Blue Line */
+.section-head h2::before {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;         /* Line ki lambai */
+  height: 4px;          /* Line ki motai */
+  background-color: #1e63ff; /* Blue color */
+  border-radius: 2px;
+}
+
+/* 2. Orange Circle */
+.section-head h2::after {
+  content: '';
+  position: absolute;
+  bottom: 3px;          /* Circle ko perfectly center karne ke liye */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;          /* Circle ka size */
+  height: 18px;
+  background-color: #e65c23; /* Orange color */
+  border-radius: 50%;   /* Gol karne ke liye */
+  border: 3px solid #f5f7fb; /* Background color ke sath match karta hua border taki line piche chhup jaye */
+}
+
+/* ---- SERVICES GRID & CARDS ---- */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 28px;
+  transition: .3s;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 240px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(15, 31, 61, .08);
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f1f3d;
+}
+
+.card p {
+  font-size: 13.5px;
+  color: #5b6b85;
+  flex: 1;
+}
+
+.ico {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8efff;
+  color: #1e63ff;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.dark-ico {
+  background: rgba(255, 255, 255, .15);
+  color: #fff;
+}
+
+.link-arrow {
+  color: #1e63ff;
+  font-size: 13.5px;
+  font-weight: 600;
+  transition: .2s;
+}
+
+.link-arrow:hover {
+  transform: translateX(4px);
+  display: inline-block;
+}
+
+.card.image {
+  padding: 0;
+  overflow: hidden;
+  background: #0f1f3d;
+}
+
+.card.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 240px;
+}
+
+.card.dark {
+  background: #1e63ff;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.card.dark h3, .card.dark p {
+  color: #fff;
+}
+
+.card.dark p {
+  opacity: .9;
+}
+
+
+/* ---- SOLUTIONS SECTION ---- */
+.solutions {
+  background: #eef2ff;
+  padding: 60px 0; /* Thoda padding upar niche space ke liye */
+}
+
+.solutions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+/* ---- NEW DIVIDER DESIGN (Left Aligned for Solutions) ---- */
+.sol-left h2 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #0f1f3d;
+  margin-bottom: 25px; 
+  position: relative;
+  display: inline-block;
+  padding-bottom: 20px; 
+}
+
+.sol-left h2 .bar {
+  display: none !important;
+}
+
+.sol-left h2::before {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: 0;               
+  width: 140px;         
+  height: 4px;           
+  background-color: #1e63ff; 
+  border-radius: 2px;
+}
+
+
+.sol-left h2::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;          
+  left: 61px;           
+  width: 18px;           
+  height: 18px;
+  background-color: #e65c23; 
+  border-radius: 50%;
+  border: 3px solid #eef2ff; }
+
+/* ---- LEFT CONTENT ELEMENTS ---- */
+.sol-left>p {
+  color: #5b6b85;
+  margin: 18px 0 26px;
+  font-size: 14.5px;
+}
+
+.sol-item {
+  display: flex;
+  gap: 14px;
+  padding: 18px;
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  transition: .3s;
+}
+
+.sol-item:hover {
+  transform: translateX(6px);
+  box-shadow: 0 10px 24px rgba(15, 31, 61, .06);
+}
+
+.sol-ico {
+  width: 42px;
+  height: 42px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8efff;
+  color: #1e63ff;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.sol-item h4 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.sol-item p {
+  font-size: 13px;
+  color: #5b6b85;
+}
+
+/* ---- RIGHT CONTENT ELEMENTS (GRID) ---- */
+.sol-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.sr-row {
+  display: contents;
+}
+
+.sr-img {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #dfe6f2;
+}
+
+.sr-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 180px;
+}
+
+.sr-dark {
+  background: #1a2740;
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.sr-dark h4 {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+.sr-dark p {
+  font-size: 12.5px;
+  opacity: .8;
+}
+
+.sr-webdev {
+  grid-column: 2;
+  background: #fff;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.sr-webdev h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* ---- RIGHT CONTENT ELEMENTS (GRID) ---- */
+.sol-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(180px, auto); /* Rows ki auto height balance karne ke liye */
+  gap: 16px;
+  align-items: stretch; /* Taki dono sath wale card barabar height ke rahein */
+}
+
+.sr-row {
+  display: contents; /* Yeh pehli do cheezon ko grid me flow karne deta hai */
+}
+
+/* Row 1, Left Column - Agent Image */
+.sr-img {
+  grid-column: 1;
+  grid-row: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #dfe6f2;
+}
+
+.sr-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Row 1, Right Column - ACD Box */
+.sr-dark {
+  grid-column: 2;
+  grid-row: 1;
+  background: #1a2740;
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.sr-dark h4 {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+.sr-dark p {
+  font-size: 12.5px;
+  opacity: .8;
+}
+
+/* Row 2, Left Column - System Chip Image (Upar lane ke liye) */
+.sr-chip {
+  grid-column: 1;
+  grid-row: 2; /* Forcefully pehli row ke thik niche second row me dala */
+  border-radius: 12px;
+  overflow: hidden;
+  background: #dfe6f2;
+}
+
+.sr-chip img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Row 2, Right Column - Web Dev Card (Upar lane ke liye) */
+.sr-webdev {
+  grid-column: 2;
+  grid-row: 2; /* Forcefully second row me dala taki upar ki blank space khatam ho jaye */
+  background: #fff;
+  border-radius: 12px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sr-webdev h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #0f1f3d;
+}
+
+.sr-webdev p {
+  font-size: 13.5px;
+  color: #5b6b85;
+}
+.sr-chip {
+  grid-column: 1;
+  grid-row: 2;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.sr-chip img {
+  width: 270px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ===== CTA ===== */
+.cta-section{background:#1e63ff;color:#fff;padding:50px 0}
+.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.cta-inner h2{font-size:24px;font-weight:700;margin-bottom:6px}
+.cta-inner p{opacity:.85;font-size:14px}
+.cta-btns{display:flex;gap:14px;flex-wrap:wrap}
+
+/* ===== Footer ===== */
+.footer{background:#0d1424;color:#cfd5e2;padding:60px 0 0}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px}
+.brand.light{color:#fff;margin-bottom:14px}
+.footer p{font-size:13.5px;margin-bottom:8px;color:#9aa3b8}
+.footer .muted{color:#9aa3b8;font-size:13px}
+.footer h4{color:#fff;font-size:13px;letter-spacing:1px;margin-bottom:16px;font-weight:700}
+.footer ul li{margin-bottom:10px}
+.footer ul li a{font-size:13.5px;color:#9aa3b8;transition:.2s}
+.footer ul li a:hover{color:#fff}
+.newsletter{background:#fff;color:#0f1f3d;padding:14px;border-radius:10px;margin-top:20px}
+.newsletter p{font-size:11px;font-weight:700;letter-spacing:.5px;color:#0f1f3d;margin-bottom:8px}
+.newsletter form{display:flex;gap:6px}
+.newsletter input{flex:1;border:1px solid #d6dce6;border-radius:6px;padding:8px 10px;font-size:13px;outline:none}
+.newsletter button{background:#1e63ff;color:#fff;border:none;border-radius:6px;padding:0 14px;cursor:pointer;font-size:14px;transition:.2s}
+.newsletter button:hover{background:#1750d6}
+.footer-bottom{border-top:1px solid #1f2a44;margin-top:50px;padding:20px;text-align:center;font-size:13px;color:#7c869c}
+
+/* ===== Responsive ===== */
+@media (max-width:992px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .hero h1{font-size:36px}
+  .services-grid{grid-template-columns:1fr 1fr}
+  .solutions-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:30px}
+}
+@media (max-width:600px){
+  .hero{min-height:auto}
+  .hero-content{padding:60px 20px}
+  .hero h1{font-size:28px}
+  .hero p{font-size:14px}
+  .section{padding:50px 0}
+  .services-grid{grid-template-columns:1fr}
+  .sol-right{grid-template-columns:1fr}
+  .sr-webdev,.sr-chip{grid-column:1}
+  .cta-inner{flex-direction:column;align-items:flex-start}
+  .footer-grid{grid-template-columns:1fr}
+  .nav-right .btn-primary{display:none}
+}
+ 

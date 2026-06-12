@@ -1,240 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Cozy Vision Infotech Pvt. Ltd.</title>
-<link rel="stylesheet" href="Cozy Vision.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cozy Vision Infotech Pvt. Ltd.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- ===== NAVBAR ===== -->
   <header class="navbar">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
     <div class="logo">
-      <span class="logo-icon"> <img src="https://dev-internal.greencrm24.com/ravi/CozyVision/image/Logo.png" alt="logo"></span>
-      <div>
-        <h1>Cozy Vision</h1>
-        <p>Infotech Pvt. Ltd.</p>
-      </div>
+      <a href="index.html">
+        <img src="https://dev-external.greencrm24.com/ravi/CozyVision/image/cozy_logo.webp" alt="Cozy Vision Logo">
+      </a>
     </div>
-    <nav>
+    <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </label>
+    <nav class="nav-menu">
+      <label for="nav-toggle" class="close-menu">&times;</label>
       <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#services">Services &amp; Solutions</a></li>
-        <li><a href="#">Carriers</a></li>
-        <li><a href="#">Our Vision</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Online Stores</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="Product.html">Products &amp; Platforms <span class="nav-arrow">▾</span></a></li>
+        <li><a href="services.html">Services &amp; Solutions <span class="nav-arrow">▾</span></a></li>
+        <li><a href="Career.html">Careers</a></li>
+        <li><a href="Aboutus.html">About Us</a></li>
+        <li><a href="contact.html" class="nav-contact-btn">📞 Contact Us</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- ===== HERO ===== -->
   <section class="hero">
-    <div class="hero-overlay"></div>
     <div class="hero-content">
-      <span class="badge">✈ Next-Gen IT Infrastructure</span>
-      <h2>Building the Future of <br><span class="highlight">Business Productivity</span></h2>
+      <div class="badge">✦ Digital Transformation Experts</div>
+      <h1>
+        <span class="ravi">Technology Solutions</span><br>
+        <span class="highlight">for Growing Businesses</span>
+      </h1>
+      <p class="hero-desc">End-to-end technology solutions including web development, mobile applications, cloud
+        infrastructure, business communication and enterprise software</p>
       <div class="hero-buttons">
         <a href="#" class="btn btn-primary">Explore Solutions →</a>
-        <a href="#" class="btn btn-secondary">Watch Vision</a>
+        <a href="contact.html" class="btn btn-watch">Get in Touch</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== PRODUCTS ===== -->
+  <!-- ===== ABOUT ===== -->
+  <section class="about-section">
+    <div class="about-left">
+      <p class="about-eyebrow">ABOUT COZY VISION</p>
+      <h2 class="about-heading">Your Trusted Technology Partner</h2>
+      <div class="about-divider"></div>
+      <p class="about-desc">Cozy Vision Infotech Pvt. Ltd. helps businesses embrace digital transformation through
+        innovative software, cloud, communication, and enterprise solutions. With a commitment to quality, reliability,
+        and customer success, we deliver technology that improves efficiency, drives growth, and enables organizations
+        to stay ahead in an increasingly connected world.</p>
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-icon">👤</div>
+          <div class="stat-num">15+</div>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">😊</div>
+          <div class="stat-num">1000+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">🎧</div>
+          <div class="stat-num">24x7</div>
+          <div class="stat-label">Support &amp; Assistance</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">🌐</div>
+          <div class="stat-num">Pan India</div>
+          <div class="stat-label">Presence</div>
+        </div>
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="about-img-wrap">
+        <img src="https://dev-external.greencrm24.com/ravi/CozyVision/image/Indexabout.png" alt="Cozy Vision Office">
+      </div>
+      <div class="about-values">
+        <div class="value-item">
+          <div class="value-icon">💡</div>
+          <div>
+            <h5>Innovation</h5>
+            <p>Driving technology innovation for tomorrow</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">🛡️</div>
+          <div>
+            <h5>Integrity</h5>
+            <p>Committed to honesty and transparency</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">⭐</div>
+          <div>
+            <h5>Excellence</h5>
+            <p>Delivering quality in everything we do</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS & PLATFORMS ===== -->
   <section class="section" id="products">
-    <h3 class="section-title">OUR PRODUCTS </h3>
+    <h2 class="section-title">PRODUCTS &amp; PLATFORMS</h2>
     <div class="divider"></div>
-    <p class="section-desc">
-      Our high-quality headsets and voice loggers are engineered for clarity and durability,
-      specifically designed for high-performance call center environments.
-    </p>
+    <div class="products-grid">
 
-    <div class="card-grid">
-      <div class="card">
-        <img src="https://dev-internal.greencrm24.com/ravi/CozyVision/image/Headsets.png" alt="USB Headset">
-        <h4>USB HEADSETS</h4>
-        <p>Plug and play headsets with HD voice quality for computers and laptops.</p>
-        <a href="#" class="read-more">Read More ›</a>
+      <!-- GreenCRM24 -->
+      <div class="product-card card-crm">
+        <div class="product-brand green-crm">
+          <span class="brand-dot"></span>
+          <span class="brand-name">Green<span>CRM</span><em>24</em></span>
+        </div>
+        <div class="product-icon-wrap">📊</div>
+        <h4>CRM Platform</h4>
+        <p>Manage leads, customers, sales pipelines and support workflows from one unified dashboard. Designed for
+          growing sales teams that need clarity and speed.</p>
+        <div class="product-tags">
+          <span class="product-tag">Lead Management</span>
+          <span class="product-tag">Sales Pipeline</span>
+          <span class="product-tag">Customer Support</span>
+        </div>
+        <div class="product-card-divider"></div>
+        <a href="#" class="learn-more">Learn More →</a>
       </div>
-      <div class="card">
-        <img src="https://dev-internal.greencrm24.com/ravi/CozyVision/image/RJ9 Headsets.png" alt="RJ9 Headset">
-        <h4>RJ9 HEADSETS</h4>
-        <p>Optimized for standard desk phones with specialized RJ9 connector systems.</p>
-        <a href="#" class="read-more">Read More ›</a>
+
+      <!-- Vertex Voice -->
+      <div class="product-card card-voice">
+        <div class="product-brand vertex-voice">
+          <span class="brand-dot"></span>
+          <span class="brand-name"><span>Vertex</span> Voice</span>
+        </div>
+        <div class="product-icon-wrap">🎧</div>
+        <h4>Headsets</h4>
+        <p>Professional-grade headsets engineered for call centres and enterprise use — noise cancellation, all-day
+          comfort, and crystal-clear audio performance.</p>
+        <div class="product-tags">
+          <span class="product-tag">Noise Cancellation</span>
+          <span class="product-tag">Wired &amp; Wireless</span>
+          <span class="product-tag">Enterprise Grade</span>
+        </div>
+        <div class="product-card-divider"></div>
+        <a href="#" class="learn-more">Learn More →</a>
       </div>
-      <div class="card">
-        <img src="https://dev-internal.greencrm24.com/ravi/CozyVision/image/3.5MM Headsets.png" alt="3.5mm Headset">
-        <h4>3.5MM HEADSETS</h4>
-        <p>Universal compatibility with mobile phones, tablets, and legacy systems.</p>
-        <a href="#" class="read-more">Read More ›</a>
+
+      <!-- Cloud Infra -->
+      <div class="product-card card-cloud">
+        <div class="product-brand cloud-infra">
+          <span class="brand-dot"></span>
+          <span class="brand-name"><span>Cloud</span> Infra</span>
+        </div>
+        <div class="product-icon-wrap">☁️</div>
+        <h4>Cloud Infrastructure</h4>
+        <p>Secure, scalable hosting, domain registration and business email services. Everything your business needs to
+          stay online, fast and protected — 24/7.</p>
+        <div class="product-tags">
+          <span class="product-tag">Managed Hosting</span>
+          <span class="product-tag">Business Email</span>
+          <span class="product-tag">SSL &amp; Security</span>
+        </div>
+        <div class="product-card-divider"></div>
+        <a href="#" class="learn-more">Learn More →</a>
       </div>
-      <div class="card">
-        <img src="https://dev-internal.greencrm24.com/ravi/CozyVision/image/USB Logger.png" alt="Voice Logger">
-        <h4>USB VOICE LOGGER</h4>
-        <p>Reliable call recording solution with HD voice quality for compliance.</p>
-        <a href="#" class="read-more">Read More ›</a>
+
+    </div>
+  </section>
+
+  <!-- ===== SERVICES & SOLUTIONS ===== -->
+  <section class="section services-section" id="services">
+    <h2 class="section-title">SERVICES &amp; SOLUTIONS</h2>
+    <div class="divider"></div>
+    <div class="services-icon-grid">
+
+      <div class="svc-item">
+        <div class="svc-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="8" width="40" height="28" rx="3" stroke="#1860d3" stroke-width="2.5" fill="#e8f0fd" />
+            <rect x="8" y="12" width="32" height="20" rx="1.5" fill="#fff" stroke="#1860d3" stroke-width="1.5" />
+            <line x1="16" y1="40" x2="32" y2="40" stroke="#1860d3" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="24" y1="36" x2="24" y2="40" stroke="#1860d3" stroke-width="2" />
+            <rect x="10" y="14" width="28" height="3" rx="1" fill="#1860d3" opacity="0.25" />
+            <rect x="10" y="19" width="18" height="2" rx="1" fill="#1860d3" opacity="0.2" />
+            <rect x="10" y="23" width="22" height="2" rx="1" fill="#1860d3" opacity="0.2" />
+            <rect x="10" y="27" width="14" height="2" rx="1" fill="#1860d3" opacity="0.15" />
+          </svg>
+        </div>
+        <h5>Website Development</h5>
+        <p>Modern, responsive &amp; SEO-friendly websites.</p>
+      </div>
+
+      <div class="svc-item">
+        <div class="svc-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="14" y="4" width="20" height="36" rx="4" stroke="#1860d3" stroke-width="2.5" fill="#e8f0fd" />
+            <rect x="18" y="9" width="12" height="22" rx="1.5" fill="#fff" stroke="#1860d3" stroke-width="1.5" />
+            <circle cx="24" cy="36" r="2" fill="#1860d3" opacity="0.6" />
+            <rect x="21" y="6" width="6" height="1.5" rx="0.75" fill="#1860d3" opacity="0.35" />
+            <rect x="20" y="12" width="8" height="2" rx="1" fill="#1860d3" opacity="0.2" />
+            <rect x="20" y="16" width="8" height="2" rx="1" fill="#1860d3" opacity="0.2" />
+            <rect x="20" y="20" width="5" height="2" rx="1" fill="#1860d3" opacity="0.15" />
+            <rect x="20" y="24" width="7" height="2" rx="1" fill="#1860d3" opacity="0.15" />
+          </svg>
+        </div>
+        <h5>Mobile App Development</h5>
+        <p>iOS &amp; Android apps for your business.</p>
+      </div>
+
+      <div class="svc-item">
+        <div class="svc-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="10" width="40" height="26" rx="3" stroke="#1860d3" stroke-width="2.5" fill="#e8f0fd" />
+            <rect x="8" y="14" width="32" height="18" rx="1.5" fill="#fff" stroke="#1860d3" stroke-width="1.5" />
+            <polyline points="13,26 18,21 22,25 27,19 35,23" stroke="#1860d3" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round" fill="none" />
+            <circle cx="35" cy="23" r="2.5" fill="#1860d3" opacity="0.7" />
+            <line x1="15" y1="40" x2="33" y2="40" stroke="#1860d3" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="24" y1="36" x2="24" y2="40" stroke="#1860d3" stroke-width="2" />
+          </svg>
+        </div>
+        <h5>Custom Software Development</h5>
+        <p>Tailored software to fit your business.</p>
+      </div>
+
+      <div class="svc-item">
+        <div class="svc-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="24" cy="14" rx="16" ry="6" stroke="#1860d3" stroke-width="2.5" fill="#e8f0fd" />
+            <path d="M8 14v8c0 3.314 7.163 6 16 6s16-2.686 16-6v-8" stroke="#1860d3" stroke-width="2.5" fill="none" />
+            <path d="M8 22v8c0 3.314 7.163 6 16 6s16-2.686 16-6v-8" stroke="#1860d3" stroke-width="2.5" fill="none" />
+            <ellipse cx="24" cy="14" rx="7" ry="2.5" fill="#1860d3" opacity="0.2" />
+          </svg>
+        </div>
+        <h5>Web Hosting</h5>
+        <p>Reliable, secure &amp; high-performance hosting.</p>
+      </div>
+
+      <div class="svc-item">
+        <div class="svc-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="10" width="36" height="24" rx="3" stroke="#1860d3" stroke-width="2.5" fill="#e8f0fd" />
+            <polyline points="6,13 24,25 42,13" stroke="#1860d3" stroke-width="2.5" stroke-linejoin="round"
+              fill="none" />
+            <line x1="6" y1="34" x2="18" y2="22" stroke="#1860d3" stroke-width="1.5" opacity="0.3" />
+            <line x1="42" y1="34" x2="30" y2="22" stroke="#1860d3" stroke-width="1.5" opacity="0.3" />
+            <circle cx="37" cy="33" r="6" fill="#1860d3" />
+            <path d="M34 33l2 2 4-4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <h5>Call Centre Solutions</h5>
+        <p>Inbound, outbound and omnichannel communication solutions for customer engagement and support teams.</p>
+      </div>
+
+      <div class="svc-item">
+        <div class="svc-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="9" stroke="#1860d3" stroke-width="2.5" fill="#e8f0fd" />
+            <circle cx="24" cy="24" r="3.5" fill="#1860d3" opacity="0.5" />
+            <line x1="24" y1="5" x2="24" y2="13" stroke="#1860d3" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="24" y1="35" x2="24" y2="43" stroke="#1860d3" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="5" y1="24" x2="13" y2="24" stroke="#1860d3" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="35" y1="24" x2="43" y2="24" stroke="#1860d3" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="9.93" y1="9.93" x2="15.61" y2="15.61" stroke="#1860d3" stroke-width="2.5"
+              stroke-linecap="round" />
+            <line x1="32.39" y1="32.39" x2="38.07" y2="38.07" stroke="#1860d3" stroke-width="2.5"
+              stroke-linecap="round" />
+            <line x1="38.07" y1="9.93" x2="32.39" y2="15.61" stroke="#1860d3" stroke-width="2.5"
+              stroke-linecap="round" />
+            <line x1="15.61" y1="32.39" x2="9.93" y2="38.07" stroke="#1860d3" stroke-width="2.5"
+              stroke-linecap="round" />
+          </svg>
+        </div>
+        <h5>Automation Solutions</h5>
+        <p>AI-driven automation to improve efficiency.</p>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:36px;">
+      <a href="services.html" class="btn btn-view-all">View All Services →</a>
+    </div>
+  </section>
+
+  <!-- ===== INDUSTRIES ===== -->
+  <section class="section industries-section">
+    <h2 class="section-title">INDUSTRIES WE SERVE</h2>
+    <div class="divider"></div>
+    <div class="industries-grid">
+      <div class="industry-item">
+        <div class="industry-icon">🏢</div>
+        <p>Real Estate</p>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🏦</div>
+        <p>Banking &amp; Finance</p>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🎧</div>
+        <p>BPO &amp; Contact Centers</p>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">📡</div>
+        <p>Telecom</p>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🔄</div>
+        <p>Recovery Agencies</p>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🚀</div>
+        <p>SMEs &amp; Startups</p>
       </div>
     </div>
   </section>
 
-  <!-- ===== SERVICES ===== -->
-  <section class="section" id="services">
-    <h3 class="section-title">OUR SERVICES</h3>
-    <div class="divider"></div>
-    <p class="section-desc">
-      Harness the power of AI-enabled applications to scale your operations and drive
-      efficiency across departments.
-    </p>
+  <!-- ===== WHY CHOOSE ===== -->
 
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon blue">👥</div>
-        <h4>CRM SOFTWARE</h4>
-        <p>Comprehensive customer relationship management built for modern enterprises. Track leads, automate sales, and enhance support through GreenCRM24.</p>
-        <a href="#" class="read-more">Learn about GreenCRM24</a>
-      </div>
+  <section class="why-section">
+    <div class="why-left">
+      <p class="why-eyebrow">WHY CHOOSE</p>
+      <h2 class="why-heading">COZYVISION?</h2>
+      <div class="why-divider"></div>
 
-      <div class="service-card image-card">
-        <img src="https://dev-internal.greencrm24.com/ravi/CozyVision/image/Vision Analytics Hub.png" width="500px" alt="Dashboard">
-      </div>
-
-      <div class="service-card dark">
-        <div class="service-icon white">⚙</div>
-        <h4>AUTOMATION</h4>
-        <p>Eliminate repetitive tasks with AI-driven workflow automation.</p>
-        <a href="#" class="btn btn-light">Read More</a>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon teal">▣</div>
-        <h4>PAYROLL SYSTEM</h4>
-        <p>Streamlined financial management and employee compensation.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon purple">📋</div>
-        <h4>WEB HOSTING</h4>
-        <p>Secure, lightning-fast hosting solutions for your business presence.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon orange">✉</div>
-        <h4>BUSINESS EMAIL</h4>
-        <p>Professional communication tools with integrated security features.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== SOLUTIONS ===== -->
-  <section class="section solutions">
-    <div class="solutions-left">
-      <h3 class="section-title left">SOLUTIONS FOR INDUSTRY</h3>
-      <div class="divider left"></div>
-      <p>
-        We offer custom solutions to specific industries including Call Centers, Banking, Telecom, and Recovery Agencies.
-        Our solutions are designed to generate leads and scale business growth.
+      <p class="why-text">
+        Delivering technology solutions that help businesses grow,
+        scale and operate efficiently through innovative products,
+        cloud infrastructure and expert support.
       </p>
-      <div class="solution-item">
-        <span class="dot blue"></span>
-        <div>
-          <h5>Contact Center Solutions</h5>
-          <p>Flexible inbound/outbound plans with one-time or monthly models.</p>
-        </div>
-      </div>
-      <div class="solution-item">
-        <span class="dot orange"></span>
-        <div>
-          <h5>IP-PBX &amp; Dialer Systems</h5>
-          <p>Advanced telephony infrastructure for high-volume call distribution.</p>
-        </div>
-      </div>
     </div>
-
-    <div class="solutions-right">
-      <div class="solution-card">
-        <img src="https://dev-internal.greencrm24.com/ravi/CozyVision/image/Agent.png" alt="Agent">
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-icon">🔗</div>
+        <p>End-to-End Technology Partner</p>
       </div>
-      <div class="solution-card dark-card">
-        <div class="icon">🔗</div>
-        <h5>AUTOMATIC CALL DISTRIBUTOR</h5>
-        <p>Intelligent routing for optimized agent performance.</p>
+      <div class="why-item">
+        <div class="why-icon">🛠️</div>
+        <p>Product &amp; Service Expertise</p>
       </div>
-      <div class="solution-card">
-        <h5>WEB DEVELOPMENT</h5>
-        <p>Full-stack web applications built on modern frameworks like React and PHP.</p>
+      <div class="why-item">
+        <div class="why-icon">📐</div>
+        <p>Scalable &amp; Flexible Solutions</p>
       </div>
-      <div class="solution-card image-only">
-        <img src="https://dev-internal.greencrm24.com/ravi/CozyVision/image/Server.png " alt="Servers">
+      <div class="why-item">
+        <div class="why-icon">🎯</div>
+        <p>Dedicated Technical Support</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">👥</div>
+        <p>Experienced Team</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">🏅</div>
+        <p>Trusted by Businesses Across India</p>
       </div>
     </div>
   </section>
 
   <!-- ===== CTA ===== -->
   <section class="cta">
-    <div>
-      <h3>Ready to transform your business?</h3>
-      <p>Our experts are waiting to help you find the perfect IT solution.</p>
+    <div class="cta-text">
+      <h2>Ready to transform<br>your business?</h2>
+      <p>Let's build the right solution for your business growth and take it to the next level.</p>
     </div>
     <div class="cta-buttons">
-      <a href="#" class="btn btn-light">Get a Free Quote</a>
-      <a href="#" class="btn btn-outline">Contact Sales</a>
+      <a href="#" class="btn btn-cta-light">Get Free Quote →</a>
+      <a href="contact.html" class="btn btn-cta-outline">Contact Sales →</a>
     </div>
   </section>
 
   <!-- ===== FOOTER ===== -->
   <footer>
-    <div class="footer-grid">
-      <div>
-        <h4>Cozy Vision Infotech</h4>
-        <p>Building future technologies that deliver premium productivity with less manpower — delivering premium experience to millions of businesses worldwide.</p>
-        <p>✉ sales@cozyvision.in</p>
-        <p>📞 +91 981 881 7234 </p>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="https://dev-external.greencrm24.com/ravi/CozyVision/image/cozy_logo.webp" alt="Cozy Vision"
+          width="140" height="45">
+        <p>Delivering innovative software, cloud and communication solutions that help businesses grow and succeed.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="YouTube">▶</a>
+        </div>
       </div>
-      <div>
+      <div class="footer-col">
+        <h5>QUICK LINKS</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Product.html">Products &amp; Platforms</a></li>
+          <li><a href="services.html">Services &amp; Solutions</a></li>
+          <li><a href="Career.html">Careers</a></li>
+          <li><a href="Aboutus.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>PRODUCTS</h5>
+        <ul>
+          <li><a href="#">GreenCRM24</a></li>
+          <li><a href="#">Vertex Voice</a></li>
+          <li><a href="#">Voice Logger</a></li>
+          <li><a href="#">Cloud Infrastructure</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
         <h5>SERVICES</h5>
         <ul>
-          <li><a href="#">Healthcare Management</a></li>
-          <li><a href="#">Inventory Management</a></li>
-          <li><a href="#">Vendor Management</a></li>
-          <li><a href="#">Payroll System</a></li>
-          <li><a href="#">Email Hosting</a></li>
-          <li><a href="#">Website Hosting</a></li>
-          <li><a href="#">Website Design</a></li>
+          <li><a href="#">Website Development</a></li>
+          <li><a href="#">Mobile App Development</a></li>
+          <li><a href="#">Custom Software</a></li>
+          <li><a href="#">Web Hosting</a></li>
+          <li><a href="#">Business Email</a></li>
+          <li><a href="#">Automation Solutions</a></li>
         </ul>
       </div>
-      <div>
-        <h5>SOLUTIONS</h5>
-        <ul>
-          <li><a href="#">Call Center Solutions</a></li>
-          <li><a href="#">IP-PBX</a></li>
-          <li><a href="#">Automatic Call Distributor</a></li>
-          <li><a href="#">Web Development</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>ONLINE STORES</h5>
-        <ul>
-          <li><a href="#">Vertex Voice</a></li>
-          <li><a href="#">GreenCRM24</a></li>
-          <li><a href="#">Voipgallery</a></li>
-        </ul>
-        <div class="newsletter">
-          <p>SUBSCRIBE TO NEWSLETTER</p>
-          <form>
-            <input type="email" placeholder="Email">
-            <button type="submit">➤</button>
-          </form>
-        </div>
+      <div class="footer-col footer-contact">
+        <h5>CONTACT US</h5>
+        <p>📍 Cozy Vision Infotech Pvt. Ltd.<br>SCO 60-61, 1st Floor, Sector 17-D,<br>Chandigarh - 160017, India</p>
+        <p>📞 +91 981 881 7234</p>
+        <p>✉ sales@cozyvision.in</p>
+        <p>🌐 www.cozyvision.in</p>
       </div>
     </div>
     <div class="footer-bottom">
-      © 2023 Cozy Vision Infotech Pvt. Ltd. All rights reserved.
+      <p>© 2023 Cozy Vision Infotech Pvt. Ltd. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <span>|</span>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
     </div>
   </footer>
 
+  <script>
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('nav-toggle').checked = false;
+      });
+    });
+  </script>
+
 </body>
+
 </html>
